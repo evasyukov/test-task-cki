@@ -1,5 +1,9 @@
 <template>
   <SwitchButton></SwitchButton>
+  <SwitchButton></SwitchButton>
+  <SwitchButton></SwitchButton>
+  <SwitchButton></SwitchButton>
+
   <div class="quatrain">
     <div id="quatrain-one">
       <p>Out of the night that covers me,</p>

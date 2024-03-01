@@ -16,9 +16,13 @@ import Quatrain from "./components/Quatrain.vue"
 .title {
   display: flex;
   justify-content: center;
+  align-items: baseline;
+}
+.title h1{
+/* margin-right: 50px; */
 }
 .autor {
-  padding-left: 5vh;
+  margin-left: 20px;
 }
 .verse {
   display: flex;
