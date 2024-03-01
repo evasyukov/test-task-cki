@@ -1,7 +1,21 @@
 # Vue 3 + Vite
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Out of the night that covers me,
+      Black as the pit from pole to pole,
+I thank whatever gods may be
+      For my unconquerable soul.
 
-## Recommended IDE Setup
+In the fell clutch of circumstance
+      I have not winced nor cried aloud.
+Under the bludgeonings of chance
+      My head is bloody, but unbowed.
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Beyond this place of wrath and tears
+      Looms but the Horror of the shade,
+And yet the menace of the years
+      Finds and shall find me unafraid.
+
+It matters not how strait the gate,
+      How charged with punishments the scroll,
+I am the master of my fate,
+      I am the captain of my soul.
