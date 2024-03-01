@@ -1,15 +1,15 @@
 <script setup>
-import Quatrain from './components/Quatrain.vue';
-
-
+import Quatrain from "./components/Quatrain.vue"
 </script>
 
 <template>
   <div class="title">
-    <h1 class="verse">Invictus</h1>
+    <h1>Invictus</h1>
     <h3 class="autor">by William Ernest Henley</h3>
   </div>
-  <Quatrain></Quatrain>
+  <div class="verse">
+    <Quatrain></Quatrain>
+  </div>
 </template>
 
 <style scoped>
@@ -17,8 +17,11 @@ import Quatrain from './components/Quatrain.vue';
   display: flex;
   justify-content: center;
 }
-
 .autor {
   padding-left: 5vh;
+}
+.verse {
+  display: flex;
+  justify-content: center;
 }
 </style>
