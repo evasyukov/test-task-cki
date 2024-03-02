@@ -1,13 +1,32 @@
+<script>
+export default {
+  props: {
+    label: {
+      type: String,
+      required: true,
+    },
+    index: {
+      type: Number,
+      required: true,
+    },
+    stanza: {
+      type: Object,
+      required: true,
+    },
+  },
+  methods: {
+    toggleVisibility() {
+      this.$emit("toggle", this.index)
+    },
+  },
+}
+</script>
+
 <template>
   <div class="switch">
-    <div class="button"></div>
-    <!-- <div class="button"></div>
-    <div class="button"></div>
-    <div class="button"></div> -->
+    <button @click="toggleVisibility" class="button">{{ label }}</button>
   </div>
 </template>
-
-<script setup></script>
 
 <style>
 .switch {
@@ -22,5 +41,10 @@
   height: 20px;
   background-color: #ffffffdc; /* #000 */
   margin: 10px;
+  border: none;
+}
+
+.button:active {
+  background-color: #000;
 }
 </style>
