@@ -1,32 +1,37 @@
+<template>
+  <div class="switch">
+    <button
+      class="button"
+      v-for="(visible, index) in visibleStanzas"
+      :class="{ 'button-active': visible }"
+      :key="index"
+      @click="toggleVisibility(index)"
+    ></button>
+  </div>
+</template>
+
 <script>
 export default {
   props: {
-    label: {
-      type: String,
-      required: true,
-    },
-    index: {
-      type: Number,
-      required: true,
-    },
-    stanza: {
-      type: Object,
+    visibleStanzas: {
+      type: Array,
       required: true,
     },
   },
   methods: {
-    toggleVisibility() {
-      this.$emit("toggle", this.index)
+    toggleVisibility(index) {
+      const visibleStanzasCount = this.visibleStanzas.filter(
+        (visible) => visible).length
+      if (
+        visibleStanzasCount > 1 ||
+        (visibleStanzasCount === 1 && !this.visibleStanzas[index])
+      ) {
+        this.$emit("toggle", index)
+      }
     },
   },
 }
 </script>
-
-<template>
-  <div class="switch">
-    <button @click="toggleVisibility" class="button">{{ label }}</button>
-  </div>
-</template>
 
 <style>
 .switch {
@@ -39,12 +44,16 @@ export default {
 .button {
   width: 20px;
   height: 20px;
+  background-color: #242424; /* #000 */
+  margin: 10px;
+  border: 2px solid #ffffffdc;
+}
+
+.button-active {
+  width: 20px;
+  height: 20px;
   background-color: #ffffffdc; /* #000 */
   margin: 10px;
   border: none;
-}
-
-.button:active {
-  background-color: #000;
 }
 </style>
