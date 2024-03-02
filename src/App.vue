@@ -1,25 +1,44 @@
-<script setup>
-import Quatrain from "./components/Quatrain.vue"
-</script>
-
 <template>
   <div class="title">
     <h1>Invictus</h1>
     <h3 class="autor">by William Ernest Henley</h3>
   </div>
   <div class="verse">
-    <Quatrain></Quatrain>
+    <SwitchButtonVue
+      :visibleStanzas="visibleStanzas"
+      @toggle="toggleStanzaVisibility"
+    />
+    <Quatrain :visibleStanzas="visibleStanzas" />
   </div>
 </template>
 
-<style scoped>
+<script>
+import Quatrain from "./components/Quatrain.vue"
+import SwitchButtonVue from "./components/SwitchButton.vue"
+
+export default {
+  components: {
+    Quatrain,
+    SwitchButtonVue,
+  },
+  data() {
+    return {
+      visibleStanzas: [true, true, true, true],
+    }
+  },
+  methods: {
+    toggleStanzaVisibility(index) {
+      this.visibleStanzas[index] = !this.visibleStanzas[index]
+    },
+  },
+}
+</script>
+
+<style>
 .title {
   display: flex;
   justify-content: center;
   align-items: baseline;
-}
-.title h1{
-/* margin-right: 50px; */
 }
 .autor {
   margin-left: 20px;
