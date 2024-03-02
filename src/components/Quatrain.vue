@@ -63,6 +63,7 @@ export default {
 .quatrain {
   font-size: 24px;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  min-width: 500px;
 }
 .quatrain p {
   margin: 0;

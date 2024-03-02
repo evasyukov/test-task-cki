@@ -40,7 +40,6 @@ export default {
   position: relative;
   right: 50px;
 }
-
 .button {
   width: 20px;
   height: 20px;
