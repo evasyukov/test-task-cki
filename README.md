@@ -29,3 +29,5 @@
 - `style.css`: Стили, приминяемые ко всему приложению.
 - `package.json`: Файл конфигурации проекта.
 - `vite.config.js`: Конфигурация Vite.
+
+## Проект можно посмотреть: https://evasyukov.github.io/test-task-cki/
