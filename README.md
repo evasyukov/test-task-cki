@@ -1,21 +1,31 @@
-# Vue 3 + Vite
+# Проект 
 
-Out of the night that covers me,
-      Black as the pit from pole to pole,
-I thank whatever gods may be
-      For my unconquerable soul.
+Этот проект представляет собой простое веб-приложение, которое отображает четверостишия и позволяет пользователю переключать их видимость.
 
-In the fell clutch of circumstance
-      I have not winced nor cried aloud.
-Under the bludgeonings of chance
-      My head is bloody, but unbowed.
+## Установка
+1. Клонируйте репозиторий: git clone https://github.com/evasyukov/test-task-cki.git
+2. Перейдите в директорию проекта: `cd test-task-cki`
+3. Установите зависимости: `npm install`
 
-Beyond this place of wrath and tears
-      Looms but the Horror of the shade,
-And yet the menace of the years
-      Finds and shall find me unafraid.
+## Запуск проекта
+Запустите проект: `npm run dev`. Проект будет доступен по адресу, указаному в консоли
+![image](https://github.com/evasyukov/test-task-cki/assets/129051899/b1f1c039-9b00-4aa6-807a-9199503dc895)
 
-It matters not how strait the gate,
-      How charged with punishments the scroll,
-I am the master of my fate,
-      I am the captain of my soul.
+## Сборка проекта для продакшен
+Для сборки проекта используется команда `npm run deploy`. Собранные файлы будут перемещенны в директорию `dist`
+
+## Технологии 
+Для данного проекта используются: 
+1. Фреймворк Vue.js
+2. Vite
+3. CSS
+
+## Структура проекта
+- `src/`: Исходный код проекта.
+- `App.vue`: Корневой компонент приложения, куда подключаются компоненты `SwitchButton.vue` и `Quatrain.vue` .
+- `Quatrain.vue`: Компонент, отвечающий за отображение четверостиний.
+- `SwitchButton.vue`: Компонент, содержащий шаблон и скрипт для кнопок переключателей видимости четверостиний.
+- `main.js`: Точка входа в приложение, где подключается компонент `App.vue`.
+- `style.css`: Стили, приминяемые ко всему приложению.
+- `package.json`: Файл конфигурации проекта.
+- `vite.config.js`: Конфигурация Vite.
