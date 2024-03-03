@@ -3,7 +3,7 @@
     <button
       class="button"
       v-for="(visible, index) in visibleStanzas"
-      :class="{ 'button-active': visible }"
+      :class="{ 'active': !visible }"
       :key="index"
       @click="toggleVisibility(index)"
     ></button>
@@ -41,18 +41,19 @@ export default {
   right: 50px;
 }
 .button {
-  width: 20px;
-  height: 20px;
-  background-color: #242424; /* #000 */
-  margin: 10px;
-  border: 2px solid #ffffffdc;
-}
 
-.button-active {
   width: 20px;
   height: 20px;
   background-color: #ffffffdc; /* #000 */
   margin: 10px;
   border: none;
+}
+
+.active {
+  width: 20px;
+  height: 20px;
+  background-color: #242424; /* #000 */
+  margin: 10px;
+  border: 2px solid #ffffffdc;
 }
 </style>
