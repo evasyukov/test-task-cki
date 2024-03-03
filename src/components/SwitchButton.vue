@@ -44,7 +44,7 @@ export default {
 
   width: 20px;
   height: 20px;
-  background-color: #ffffffdc; /* #000 */
+  background-color: #000; /* #000 */
   margin: 10px;
   border: none;
 }
@@ -52,8 +52,8 @@ export default {
 .active {
   width: 20px;
   height: 20px;
-  background-color: #242424; /* #000 */
+  background-color: #f0f0f0; /* #000 */
   margin: 10px;
-  border: 2px solid #ffffffdc;
+  border: 2px solid #000;
 }
 </style>
