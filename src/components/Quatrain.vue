@@ -1,6 +1,6 @@
 <template>
   <div class="quatrain">
-    <div
+    <div class="quatrain-list"
       v-for="index in 4"
       :key="index"
       :class="{ hidden: !visibleStanzas[index - 1] }"
@@ -44,6 +44,7 @@
         <p>I am the master of my fate</p>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am the captain of my soul.</p>
       </div>
+
     </div>
   </div>
 </template>
@@ -72,6 +73,18 @@ export default {
   & div {
     margin-bottom: 20px;
   }
+}
+.quatrain-list:nth-child(1){
+  background-color: rgba(94, 202, 52, 0.274);
+}
+.quatrain-list:nth-child(2){
+  background-color: rgba(160, 110, 110, 0.601);
+}
+.quatrain-list:nth-child(3){
+  background-color: rgba(98, 102, 161, 0.417);
+}
+.quatrain-list:nth-child(4){
+  background-color: rgba(180, 78, 156, 0.419);
 }
 .hidden {
   display: none;
