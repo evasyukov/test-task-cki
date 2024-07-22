@@ -64,12 +64,14 @@ export default {
   font-size: 24px;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   min-width: 500px;
-}
-.quatrain p {
-  margin: 0;
-}
-.quatrain div {
-  margin-bottom: 20px;
+
+  & p {
+    margin: 0;
+  }
+
+  & div {
+    margin-bottom: 20px;
+  }
 }
 .hidden {
   display: none;
