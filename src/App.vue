@@ -10,10 +10,6 @@
     />
     <Quatrain :visibleStanzas="visibleStanzas" />
   </div>
-
-  <div class="change-theme">
-    <button @click="changeTheme">Сменить тему</button>
-  </div>
 </template>
 
 <script>
@@ -34,17 +30,6 @@ export default {
     toggleStanzaVisibility(index) {
       this.visibleStanzas[index] = !this.visibleStanzas[index]
     },
-    changeTheme() {
-      const bodyClass = document.querySelector("body")
-
-      if (bodyClass.className.includes("dark-theme")) {
-        bodyClass.classList.remove("dark-theme")
-        bodyClass.classList.add("light-theme")
-      } else {
-        bodyClass.classList.remove("light-theme")
-        bodyClass.classList.add("dark-theme")
-      }
-    },
   },
 }
 </script>
@@ -61,15 +46,5 @@ export default {
 .verse {
   display: flex;
   justify-content: center;
-}
-.change-theme button{
-  background-color: transparent;
-  color: #1206f6;
-  border: 1px solid #1206f6; 
-  padding: 10px 15px; 
-  cursor: pointer; 
-  position: absolute;
-  top: 30px;
-  left: 270px;
 }
 </style>
